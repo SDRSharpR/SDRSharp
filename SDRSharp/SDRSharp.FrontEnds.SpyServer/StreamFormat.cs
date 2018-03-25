@@ -1,0 +1,12 @@
+namespace SDRSharp.FrontEnds.SpyServer
+{
+	public enum StreamFormat : uint
+	{
+		STREAM_FORMAT_INVALID,
+		STREAM_FORMAT_UINT8,
+		STREAM_FORMAT_INT16,
+		STREAM_FORMAT_INT24,
+		STREAM_FORMAT_FLOAT,
+		STREAM_FORMAT_DINT4
+	}
+}

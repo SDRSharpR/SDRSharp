@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ArrayOfMemoryEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MemoryEntry>
+    <IsFavourite>true</IsFavourite>
+    <Name>Santa Ana</Name>
+    <GroupName>CHP</GroupName>
+    <Frequency>39440000</Frequency>
+    <DetectorType>WFM</DetectorType>
+    <Shift>0</Shift>
+    <FilterBandwidth>10</FilterBandwidth>
+  </MemoryEntry>
+  <MemoryEntry>
+    <IsFavourite>true</IsFavourite>
+    <Name>NPR Radio</Name>
+    <GroupName>FM Radio</GroupName>
+    <Frequency>89300000</Frequency>
+    <DetectorType>WFM</DetectorType>
+    <Shift>0</Shift>
+    <FilterBandwidth>75330</FilterBandwidth>
+  </MemoryEntry>
+  <MemoryEntry>
+    <IsFavourite>true</IsFavourite>
+    <Name>KFI AM</Name>
+    <GroupName>Misc</GroupName>
+    <Frequency>115840000</Frequency>
+    <DetectorType>AM</DetectorType>
+    <Shift>0</Shift>
+    <FilterBandwidth>11130</FilterBandwidth>
+  </MemoryEntry>
+  <MemoryEntry>
+    <IsFavourite>true</IsFavourite>
+    <Name>Air</Name>
+    <GroupName>CHP</GroupName>
+    <Frequency>122850000</Frequency>
+    <DetectorType>AM</DetectorType>
+    <Shift>0</Shift>
+    <FilterBandwidth>4240</FilterBandwidth>
+  </MemoryEntry>
+  <MemoryEntry>
+    <IsFavourite>true</IsFavourite>
+    <Name>NOAA - Oxnard</Name>
+    <GroupName>Weather</GroupName>
+    <Frequency>162550000</Frequency>
+    <DetectorType>NFM</DetectorType>
+    <Shift>0</Shift>
+    <FilterBandwidth>24390</FilterBandwidth>
+  </MemoryEntry>
+  <MemoryEntry>
+    <IsFavourite>true</IsFavourite>
+    <Name>Conv. Center Security</Name>
+    <GroupName>Anaheim</GroupName>
+    <Frequency>453225000</Frequency>
+    <DetectorType>NFM</DetectorType>
+    <Shift>0</Shift>
+    <FilterBandwidth>5000</FilterBandwidth>
+  </MemoryEntry>
+</ArrayOfMemoryEntry>

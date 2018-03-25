@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4331A8D2-EF97-40C6-AE40-F1D8066B466C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SDRSharp</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SDRSharp.CollapsiblePanel">
+      <HintPath>..\SDRSharp.CollapsiblePanel\bin\Debug\SDRSharp.CollapsiblePanel.dll</HintPath>
+    </Reference>
+    <Reference Include="SDRSharp.Common">
+      <HintPath>..\SDRSharp.Common\bin\Debug\SDRSharp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SDRSharp.FrequencyEdit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SDRSharp.FrequencyEdit\SDRSharp.FrequencyEdit\bin\Debug\SDRSharp.FrequencyEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="SDRSharp.PanView">
+      <HintPath>..\SDRSharp.PanView\bin\Debug\SDRSharp.PanView.dll</HintPath>
+    </Reference>
+    <Reference Include="SDRSharp.Radio">
+      <HintPath>..\SDRSharp.Radio\bin\Debug\SDRSharp.Radio.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SDRSharp.FrontEnds.AirspyHF\AirspyHFDevice.cs" />
+    <Compile Include="SDRSharp.FrontEnds.AirspyHF\AirspyHFIO.cs" />
+    <Compile Include="SDRSharp.FrontEnds.AirspyHF\airspyhf_error.cs" />
+    <Compile Include="SDRSharp.FrontEnds.AirspyHF\airspyhf_sample_cb.cs" />
+    <Compile Include="SDRSharp.FrontEnds.AirspyHF\airspyhf_transfer.cs" />
+    <Compile Include="SDRSharp.FrontEnds.AirspyHF\ControllerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SDRSharp.FrontEnds.AirspyHF\NativeMethods.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\AirspyDevice.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\AirspyGainMode.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\AirspyIO.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\airspy_error.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\airspy_gpio_pin_t.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\airspy_gpio_port_t.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\airspy_sample_block_cb_fn.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\airspy_sample_type.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\airspy_transfer.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\ControllerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SDRSharp.FrontEnds.Airspy\ConversionFilters.cs" />
+    <Compile Include="SDRSharp.FrontEnds.Airspy\NativeMethods.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\ClientHandshake.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\ClientSync.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\CommandHeader.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\CommandType.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\Constants.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\ControllerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\DeviceInfo.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\DeviceType.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\MessageHeader.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\MessageType.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\SettingTarget.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\SettingType.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\SpyClient.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\SpyServerIO.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\StreamFormat.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\StreamingMode.cs" />
+    <Compile Include="SDRSharp.FrontEnds.SpyServer\StreamType.cs" />
+    <Compile Include="SDRSharp\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SDRSharp\Program.cs" />
+    <Compile Include="SDRSharp\SharpControlProxy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDRSharp.FrontEnds.AirspyHF\ControllerPanel.resx">
+      <DependentUpon>ControllerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDRSharp.FrontEnds.Airspy\ControllerPanel.resx">
+      <DependentUpon>ControllerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDRSharp.FrontEnds.SpyServer\ControllerPanel.resx">
+      <DependentUpon>ControllerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDRSharp\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

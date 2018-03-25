@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sharpPlugins>
+  <!-- add key="AF DNR" value="SDRSharp.DNR.AFNoiseReductionPlugin,SDRSharp.DNR" /> -->
+  <!-- add key="IF DNR" value="SDRSharp.DNR.IFNoiseReductionPlugin,SDRSharp.DNR" /> -->
+  <!-- add key="Baseband Noise Blanker" value="SDRSharp.NoiseBlanker.BasebandNoiseBlankerPlugin,SDRSharp.NoiseBlanker" /> -->
+  <!-- add key="Demodulator Noise Blanker" value="SDRSharp.NoiseBlanker.DemodulatorNoiseBlankerPlugin,SDRSharp.NoiseBlanker" /> -->
+  <add key="Wave Recorder" value="SDRSharp.WavRecorder.WavRecorderPlugin,SDRSharp.WavRecorder" />
+  <add key="Zoom FFT" value="SDRSharp.ZoomFFT.ZoomFFTPlugin,SDRSharp.ZoomFFT" />
+  <!-- add key="Band Plan" value="SDRSharp.BandPlan.BandPlanPlugin,SDRSharp.BandPlan" /> -->
+  <add key="Frequency Manager" value="SDRSharp.FrequencyManager.FrequencyManagerPlugin,SDRSharp.FrequencyManager" />
+  <add key="Signal Diagnostics" value="SDRSharp.Diagnostics.DiagnosticsPlugin,SDRSharp.Diagnostics" />
+  <!-- add key="DDE Tracking Client" value="SDRSharp.DDETracker.DdeTrackingPlugin,SDRSharp.DDETracker" /> -->
+  <add key="Trunker" value="SDRSharp.Trunker.TrunkerPlugin,SDRSharp.Trunker" />
+  <add key="DSD" value="SDRSharp.DSD.DSDPlugin,SDRSharp.DSD" />
+  <add key="Frequency Scanner" value="SDRSharp.FrequencyScanner.FrequencyScannerPlugin,SDRSharp.FrequencyScanner" /> 
+  <!-- add key="TimeShift" value="SDRSharp.TimeShift.TimeShiftPlugin,SDRSharp.TimeShift" /> -->
+  <!-- add key="TV" value="SDRSharp.TV.TVPlugin,SDRSharp.TV" /> -->
+  <!-- add key="DCSDecoder" value="SDRSharp.DCSDecoder.DCSDecoderPlugin,SDRSharp.DCSDecoder" /> -->
+  <!-- add key="DAP" value="SDRSharp.DAP.DAPPlugin,SDRSharp.DAP" /> -->
+  <add key="CTCSSDecoder" value="SDRSharp.CTCSSDecoder.CTCSSDecoderPlugin,SDRSharp.CTCSSDecoder" />
+  <!-- add key="JarodCalc" value="SDRSharp.JarodCalc.JarodCalcPlugin,SDRSharp.JarodCalc" /> -->
+</sharpPlugins>

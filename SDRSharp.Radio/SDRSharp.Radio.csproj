@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A24DD927-34EF-4301-BDF3-42C872BC944E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SDRSharp.Radio</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PortAudioSharp\PaDeviceIndex.cs" />
+    <Compile Include="PortAudioSharp\PaDeviceInfo.cs" />
+    <Compile Include="PortAudioSharp\PaError.cs" />
+    <Compile Include="PortAudioSharp\PaHostApiInfo.cs" />
+    <Compile Include="PortAudioSharp\PaHostApiTypeId.cs" />
+    <Compile Include="PortAudioSharp\PaHostErrorInfo.cs" />
+    <Compile Include="PortAudioSharp\PaSampleFormat.cs" />
+    <Compile Include="PortAudioSharp\PaStreamCallbackDelegate.cs" />
+    <Compile Include="PortAudioSharp\PaStreamCallbackFlags.cs" />
+    <Compile Include="PortAudioSharp\PaStreamCallbackResult.cs" />
+    <Compile Include="PortAudioSharp\PaStreamCallbackTimeInfo.cs" />
+    <Compile Include="PortAudioSharp\PaStreamFinishedCallbackDelegate.cs" />
+    <Compile Include="PortAudioSharp\PaStreamFlags.cs" />
+    <Compile Include="PortAudioSharp\PaStreamInfo.cs" />
+    <Compile Include="PortAudioSharp\PaStreamParameters.cs" />
+    <Compile Include="PortAudioSharp\PortAudioAPI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\AudioBufferAvailableDelegate.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\AudioBufferNeededDelegate.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\AudioDevice.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\DeviceDirection.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\Int24.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\WaveDuplex.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\WaveFile.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\WavePlayer.cs" />
+    <Compile Include="SDRSharp.Radio.PortAudio\WaveRecorder.cs" />
+    <Compile Include="SDRSharp.Radio\AmAntiFading.cs" />
+    <Compile Include="SDRSharp.Radio\AmDetector.cs" />
+    <Compile Include="SDRSharp.Radio\AutomaticGainControl.cs" />
+    <Compile Include="SDRSharp.Radio\BlockMode.cs" />
+    <Compile Include="SDRSharp.Radio\BufferNeededDelegate.cs" />
+    <Compile Include="SDRSharp.Radio\CarrierLocker.cs" />
+    <Compile Include="SDRSharp.Radio\CircularBuffer.cs" />
+    <Compile Include="SDRSharp.Radio\Complex.cs" />
+    <Compile Include="SDRSharp.Radio\ComplexCircularBuffer.cs" />
+    <Compile Include="SDRSharp.Radio\ComplexDecimator.cs" />
+    <Compile Include="SDRSharp.Radio\ComplexFifoStream.cs" />
+    <Compile Include="SDRSharp.Radio\ComplexFilter.cs" />
+    <Compile Include="SDRSharp.Radio\CwDetector.cs" />
+    <Compile Include="SDRSharp.Radio\DcRemover.cs" />
+    <Compile Include="SDRSharp.Radio\DetectorType.cs" />
+    <Compile Include="SDRSharp.Radio\DownConverter.cs" />
+    <Compile Include="SDRSharp.Radio\DSPThreadPool.cs" />
+    <Compile Include="SDRSharp.Radio\FilterBuilder.cs" />
+    <Compile Include="SDRSharp.Radio\FirFilter.cs" />
+    <Compile Include="SDRSharp.Radio\FloatCircularBuffer.cs" />
+    <Compile Include="SDRSharp.Radio\FloatDecimator.cs" />
+    <Compile Include="SDRSharp.Radio\FloatFifoStream.cs" />
+    <Compile Include="SDRSharp.Radio\FmDetector.cs" />
+    <Compile Include="SDRSharp.Radio\FmMode.cs" />
+    <Compile Include="SDRSharp.Radio\Fourier.cs" />
+    <Compile Include="SDRSharp.Radio\FrequencyTranslator.cs" />
+    <Compile Include="SDRSharp.Radio\HookManager.cs" />
+    <Compile Include="SDRSharp.Radio\IBaseProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\IConfigurationPanelProvider.cs" />
+    <Compile Include="SDRSharp.Radio\IConnectableSource.cs" />
+    <Compile Include="SDRSharp.Radio\IControlAwareObject.cs" />
+    <Compile Include="SDRSharp.Radio\IFloatingConfigDialogProvider.cs" />
+    <Compile Include="SDRSharp.Radio\IFrontendController.cs" />
+    <Compile Include="SDRSharp.Radio\IFrontendOffset.cs" />
+    <Compile Include="SDRSharp.Radio\IIQProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\IIQStreamController.cs" />
+    <Compile Include="SDRSharp.Radio\IirFilter.cs" />
+    <Compile Include="SDRSharp.Radio\IirFilterType.cs" />
+    <Compile Include="SDRSharp.Radio\INonBlockingController.cs" />
+    <Compile Include="SDRSharp.Radio\IQBalancer.cs" />
+    <Compile Include="SDRSharp.Radio\IQFirFilter.cs" />
+    <Compile Include="SDRSharp.Radio\IRdsBitStreamProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\IRealProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\ISampleRateChangeSource.cs" />
+    <Compile Include="SDRSharp.Radio\ISoundcardController.cs" />
+    <Compile Include="SDRSharp.Radio\ISpectrumProvider.cs" />
+    <Compile Include="SDRSharp.Radio\IStreamProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\ITunableSource.cs" />
+    <Compile Include="SDRSharp.Radio\Oscillator.cs" />
+    <Compile Include="SDRSharp.Radio\OverlapAddProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\OverlapCrossfadeProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\OverlapSaveProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\OverlapSlideProcessor.cs" />
+    <Compile Include="SDRSharp.Radio\Pll.cs" />
+    <Compile Include="SDRSharp.Radio\ProcessorType.cs" />
+    <Compile Include="SDRSharp.Radio\RdsDecoder.cs" />
+    <Compile Include="SDRSharp.Radio\RdsDetectorBank.cs" />
+    <Compile Include="SDRSharp.Radio\RdsDumpGroups.cs" />
+    <Compile Include="SDRSharp.Radio\RdsFrame.cs" />
+    <Compile Include="SDRSharp.Radio\RdsFrameAvailableDelegate.cs" />
+    <Compile Include="SDRSharp.Radio\Resampler.cs" />
+    <Compile Include="SDRSharp.Radio\SamplesAvailableDelegate.cs" />
+    <Compile Include="SDRSharp.Radio\SharpEvent.cs" />
+    <Compile Include="SDRSharp.Radio\SharpThreadPool.cs" />
+    <Compile Include="SDRSharp.Radio\SideBandDetector.cs" />
+    <Compile Include="SDRSharp.Radio\StereoDecoder.cs" />
+    <Compile Include="SDRSharp.Radio\StreamControl.cs" />
+    <Compile Include="SDRSharp.Radio\SyndromeDetector.cs" />
+    <Compile Include="SDRSharp.Radio\Trig.cs" />
+    <Compile Include="SDRSharp.Radio\TuningStyle.cs" />
+    <Compile Include="SDRSharp.Radio\UnsafeBuffer.cs" />
+    <Compile Include="SDRSharp.Radio\Utils.cs" />
+    <Compile Include="SDRSharp.Radio\Vfo.cs" />
+    <Compile Include="SDRSharp.Radio\WindowType.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

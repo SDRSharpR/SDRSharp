@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<frontendPlugins>
+  <add key="UHD / USRP" value="SDRSharp.USRP.UsrpIO,SDRSharp.USRP" />
+  <add key="HackRF" value="SDRSharp.HackRF.HackRFIO,SDRSharp.HackRF" />
+  <add key="RTL-SDR (USB)" value="SDRSharp.RTLSDR.RtlSdrIO,SDRSharp.RTLSDR" />
+  <add key="RTL-SDR (TCP)" value="SDRSharp.RTLTCP.RtlTcpIO,SDRSharp.RTLTCP"/>
+  <add key="FUNcube Dongle Pro" value="SDRSharp.FUNcube.FunCubeIO,SDRSharp.FUNcube" />
+  <add key="FUNcube Dongle Pro+" value="SDRSharp.FUNcubeProPlus.FunCubeProPlusIO,SDRSharp.FUNcubeProPlus" />
+  <add key="SoftRock (Si570)" value="SDRSharp.SoftRock.SoftRockIO,SDRSharp.SoftRock" />
+  <add key="RFSPACE SDR-IQ (USB)" value="SDRSharp.SDRIQ.SdrIqIO,SDRSharp.SDRIQ" />
+  <add key="RFSPACE Networked Radios" value="SDRSharp.SDRIP.SdrIpIO,SDRSharp.SDRIP" />
+  <add key="Afedri SDR-Net" value="SDRSharp.AfedriSDRNet.AfedriSdrNetIO,SDRSharp.AfedriSDRNet" />
+</frontendPlugins>
