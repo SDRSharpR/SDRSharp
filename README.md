@@ -1,6 +1,6 @@
 # SDRSharp Build 1632 Core Full Source (VS2017)
 <br>
-Build Order:<br>
+<h3>Build Order:</h3><br>
 	Radio<br>
 	PanView<br>
 	Common<br>
@@ -10,4 +10,6 @@ Build Order:<br>
 <br>
 After successful build copy all files from 'Core Includes' to bin directory.<br>
 <br>
-Have fun experimenting with current source!
+Have fun experimenting with current source!<br>
+<br>
+TODO: Add direct support for P25 ;)
