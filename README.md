@@ -1,10 +1,10 @@
 # SDRSharp Build 1632 Core Full Source (VS2017)
 
-Build Order:
+Build Order
 Radio
 PanView
 Common
-CollaspiblePanel
+CollapsiblePanel
 FrequencyEdit
 SDRSharp - Don't forget to check your references to the above.
 
