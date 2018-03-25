@@ -7,7 +7,7 @@
 	FrequencyEdit<br>
 	SDRSharp - Don't forget to check your references to the above.<br>
 <br>
-After successful build copy all files from 'Core Includes' to bin directory.<br>
+After successful build copy all files from 'Core Includes' to build directory.<br>
 <br>
 Have fun experimenting with current source!<br>
 <br>
