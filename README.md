@@ -1,6 +1,6 @@
 # SDRSharp Build 1632 Core Full Source (VS2017)
 
-Build Order:
+Build Order:<br>
 	Radio
 	PanView
 	Common
