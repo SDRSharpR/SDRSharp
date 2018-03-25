@@ -1,5 +1,4 @@
 # SDRSharp Build 1632 Core Full Source (VS2017)
-<br>
 <h3>Build Order:</h3>
 	Radio<br>
 	PanView<br>
