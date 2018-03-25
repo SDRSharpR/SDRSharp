@@ -1,6 +1,0 @@
-Radio
-PanView
-Common
-CollaspiblePanel
-FrequencyEdit
-SDRSharp
