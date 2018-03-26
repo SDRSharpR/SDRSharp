@@ -11,4 +11,5 @@ After successful build copy all files from 'Core Includes' to build directory.<b
 <br>
 Have fun experimenting with current source!<br>
 <br>
-TODO: Add direct support for P25 ;)
+TODO: Add direct support for P25 ;)<br><br>
+Stay tuned for further releases... Upcoming... UniTrunker!! Just cleaning it up for successful compile. ;)
